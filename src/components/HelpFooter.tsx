@@ -5,7 +5,7 @@ export default function HelpFooter() {
     <div className="flex justify-center w-full lg:max-w-[980px] xl:max-w-[1300px] mx-auto px-3 lg:px-0 my-[50px]  lg:my-[100px]">
       <div className="">
         <p className="text-[32px] leading-[100%] text-center text-[#31353B] font-semibold">
-          Need more Help?
+          Need more Help ?
         </p>
 
         <div className="mt-2 flex items-center justify-center gap-3">
