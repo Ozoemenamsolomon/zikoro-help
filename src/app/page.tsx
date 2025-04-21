@@ -8,13 +8,8 @@ import HelpFooter from "@/components/HelpFooter";
 export default function Home() {
   return (
     <div>
-      <div className="sticky top-4 z-10">
-        <Navbar />
-      </div>
       <Hero />
       <HelpBody />
-      <HelpFooter />
-      <Footer />
     </div>
   );
 }

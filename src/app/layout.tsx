@@ -1,5 +1,8 @@
+import HelpFooter from "@/components/HelpFooter";
 import "./globals.css";
 import { montserrat } from "@/constants/fonts";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -7,7 +10,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        <div className="sticky top-4 z-10">
+          <Navbar />
+        </div>
+        {children}
+        <HelpFooter />
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -5,6 +5,7 @@ import {
   HelpEngs,
   HelpArrowIcon,
 } from "@/constants/icons";
+import Link from "next/link";
 
 export default function HelpBody() {
   const sections = [
@@ -13,7 +14,7 @@ export default function HelpBody() {
       tile: "Zikoro Events",
       desc: "Plan, manage, and run unforgettable events.",
       linkText: "Go to Events Help Center",
-      link: "",
+      link: "/events",
       PopTop1: "Popular topic 1",
       PopTop2: "Popular topic 2",
       PopTop3: "Popular topic 3",
@@ -24,7 +25,7 @@ export default function HelpBody() {
       tile: "Zikoro Credentials",
       desc: "Design, issue, and manage digital certificates and badges.",
       linkText: "Go to Credentials Help Center",
-      link: "",
+      link: "/credentials",
       PopTop1: "Popular topic 1",
       PopTop2: "Popular topic 2",
       PopTop3: "Popular topic 3",
@@ -35,7 +36,7 @@ export default function HelpBody() {
       tile: "Zikoro Bookings",
       desc: "Streamline scheduling for you and your team.",
       linkText: "Go to Bookings Help Center",
-      link: "",
+      link: "/credentials",
       PopTop1: "Popular topic 1",
       PopTop2: "Popular topic 2",
       PopTop3: "Popular topic 3",
@@ -46,7 +47,7 @@ export default function HelpBody() {
       tile: "Zikoro Engagement",
       desc: "Drive interaction and audience participation.",
       linkText: "Go to Engagement Help Center",
-      link: "",
+      link: "/engagements",
       PopTop1: "Popular topic 1",
       PopTop2: "Popular topic 2",
       PopTop3: "Popular topic 3",
@@ -72,12 +73,12 @@ export default function HelpBody() {
                   {section.desc}
                 </p>
 
-                <div className="flex gap-x-3 mt-6 items-center cursor-pointer ">
+                <Link href={section.link} className="flex gap-x-3 mt-6 items-center cursor-pointer ">
                   <p className="text-indigo-700 text-base font-medium decoration-indigo-700 underline">
                     {section.linkText}
                   </p>
                   <HelpArrowIcon />
-                </div>
+                </Link>
 
                 <ul className="font-[#31353B] list-disc text-base font-semibold mt-5 ]">
                   Popular topics
