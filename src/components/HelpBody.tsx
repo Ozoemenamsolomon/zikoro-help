@@ -83,13 +83,13 @@ export default function HelpBody() {
                 <ul className="font-[#31353B] list-disc text-base font-semibold mt-5 ]">
                   Popular topics
                 </ul>
-                <li className="text-base underline font-medium mt-1 text-[#555555">
+                <li className="text-base underline font-medium mt-1 text-[#555555] cursor-pointer">
                   {section.PopTop1}
                 </li>
-                <li className="text-base underline font-medium mt-1 text-[#555555">
+                <li className="text-base underline font-medium mt-1 text-[#555555] cursor-pointer">
                   {section.PopTop2}
                 </li>
-                <li className="text-base  underline font-medium mt-1 text-[#555555">
+                <li className="text-base  underline font-medium mt-1 text-[#555555] cursor-pointer">
                   {section.PopTop3}
                 </li>
               </div>
