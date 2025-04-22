@@ -1,4 +1,4 @@
-import HeroEvent from "@/components/events/HelpEvent";
+import HeroEvent from "@/components/events/HeroEvent";
 
 export default function Events() {
   return (

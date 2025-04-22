@@ -10,10 +10,10 @@ export default function HeroEvent() {
             Welcome to the{" "}
             <span className="bg-gradient-to-tr from-custom-gradient-start to-custom-gradient-end gradient-text">
               {" "}
-              Zikoro Help Center{" "}
+              Zikoro Events Help Center{" "}
             </span>{" "}
           </p>
-          <p className="text-[16px] mt-3 leading-[100%] text-[#555555] font-medium">
+          <p className="text-[18px] mt-3 leading-[100%] text-[#555555] font-medium">
             Your go-to guide to plan, manage, and run unforgettable events. 
           </p>
         </div>
