@@ -36,7 +36,7 @@ export default function EventBody() {
     },
   ];
 
-  const [tab, setTab] = useState<boolean>(false);
+  const [tab, setTab] = useState<boolean>(true);
   const [subTab, setSubTab] = useState<boolean>(false);
 
   return (
