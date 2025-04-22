@@ -41,19 +41,19 @@ export default function EventBody() {
 
   return (
     <div className="bg-[#001FCC19]">
-      <div className="flex items-center max-w-full lg:max-w-[980px] xl:max-w-[1300px] justify-center mx-auto ">
+      <div className="flex  max-w-full lg:max-w-[980px] xl:max-w-[1300px] justify-center mx-auto ">
         {/* left */}
         <div className=" hidden lg:block w-[20%] relative">
           {/* tab Icon */}
           <div
-            className="absolute top-[-18rem] -right-2 cursor-pointer"
+            className="absolute mt-[35px] -right-2 cursor-pointer"
             onClick={() => setTab(!tab)}
           >
             <HelpMainTabIcon />
           </div>
           {/* categories list and heading */}
           {tab && (
-            <div className="absolute top-[-15rem] pr-6 ">
+            <div className="absolute mt-[100px]   pr-6 ">
               {/* top */}
               <div>
                 <p className="text-base leading-[100%] font-semibold">
