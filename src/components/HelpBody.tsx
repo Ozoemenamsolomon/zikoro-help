@@ -36,7 +36,7 @@ export default function HelpBody() {
       tile: "Zikoro Bookings",
       desc: "Streamline scheduling for you and your team.",
       linkText: "Go to Bookings Help Center",
-      link: "/credentials",
+      link: "/bookings",
       PopTop1: "Popular topic 1",
       PopTop2: "Popular topic 2",
       PopTop3: "Popular topic 3",
