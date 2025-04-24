@@ -11,9 +11,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} antialiased`}>
-        <div className="sticky top-4 z-100">
-          <Navbar />
-        </div>
         {children}
         <HelpFooter />
         <Footer />
