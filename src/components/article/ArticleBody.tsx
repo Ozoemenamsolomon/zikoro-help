@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "styled-icons/boxicons-regular";
 
-export default function BooksBody() {
+export default function ArticleBody() {
   const sections = [
     {
       tile: "Category 1",

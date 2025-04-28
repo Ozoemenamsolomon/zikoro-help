@@ -2,6 +2,7 @@
 import { HelpMainTabIcon, HelpNoteCountIcon } from "@/constants/icons";
 import Link from "next/link";
 import { useState } from "react";
+import { ChevronDown, ChevronUp } from "styled-icons/boxicons-regular";
 
 export default function EventBody() {
   const sections = [
@@ -37,7 +38,7 @@ export default function EventBody() {
   ];
 
   const [tab, setTab] = useState<boolean>(true);
-  const [subTab, setSubTab] = useState<boolean>(false);
+  const [subTab, setSubTab] = useState<boolean>(true);
 
   return (
     <div className="bg-[#001FCC19]">
@@ -67,7 +68,35 @@ export default function EventBody() {
                 </p>
               </div>
               {/* bottom */}
-              <div></div>
+              <div className="mt-6">
+                <div className="flex justify-between items-center">
+                  <p className="text-[14px] font-semibold">Category 1</p>
+                  {subTab ? (
+                    <ChevronUp
+                      className="font-bold cursor-pointer"
+                      size={20}
+                      onClick={() => setSubTab(!subTab)}
+                    />
+                  ) : (
+                    <ChevronDown
+                      className="font-bold cursor-pointer"
+                      size={20}
+                      onClick={() => setSubTab(!subTab)}
+                    />
+                  )}
+                </div>
+
+                {subTab && (
+                  <ul className="mt-2 flex flex-col gap-y-1">
+                    <li className=" pl-1 text-[14px] font-medium list-disc list-inside">
+                      Title 1
+                    </li>
+                    <li className=" pl-1 text-[14px] font-medium list-disc list-inside">
+                      Title 2
+                    </li>
+                  </ul>
+                )}
+              </div>
             </div>
           )}
         </div>
