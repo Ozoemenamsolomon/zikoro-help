@@ -103,24 +103,7 @@ export default function ArticleBody() {
 
         {/* right */}
         <div className="border-l-[0px] lg:border-l-[1px] border-l-gray-300 w-full lg:w-[80%] px-3 lg:px-[32px] py-10 lg:py-[93px]">
-          <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
-            {sections.map((section) => (
-              <div
-                key={section.totalNo}
-                className="bg-white rounded-[10px] p-3 text-center "
-              >
-                <p className="text-xl font-semibold">{section.tile}</p>
-                <p className="text-[14px] font-medium">{section.desc}</p>
-
-                <div className="mt-6 flex gap-x-1 items-center justify-center">
-                  <HelpNoteCountIcon />
-                  <p className="text-[12px] font-medium">
-                    {section.totalNo} Articles
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+       
         </div>
       </div>
     </div>

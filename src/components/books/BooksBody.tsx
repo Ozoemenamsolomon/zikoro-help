@@ -63,7 +63,7 @@ export default function BooksBody() {
                   Categories
                 </p>
                 <p className="mt-1 text-[14px] font-medium">
-                  Select a category to learn how to better your events with
+                  Select a category to learn how to better your bookings with
                   Zikoro events.
                 </p>
               </div>
