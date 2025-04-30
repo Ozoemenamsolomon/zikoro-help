@@ -109,15 +109,17 @@ export default function EventBody() {
                 key={section.totalNo}
                 className="bg-white rounded-[10px] p-3 text-center "
               >
-                <p className="text-xl font-semibold">{section.tile}</p>
-                <p className="text-[14px] font-medium">{section.desc}</p>
+                <Link href="/category">
+                  <p className="text-xl font-semibold">{section.tile}</p>
+                  <p className="text-[14px] font-medium">{section.desc}</p>
 
-                <div className="mt-6 flex gap-x-1 items-center justify-center">
-                  <HelpNoteCountIcon />
-                  <p className="text-[12px] font-medium">
-                    {section.totalNo} Articles
-                  </p>
-                </div>
+                  <div className="mt-6 flex gap-x-1 items-center justify-center">
+                    <HelpNoteCountIcon />
+                    <p className="text-[12px] font-medium">
+                      {section.totalNo} Articles
+                    </p>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

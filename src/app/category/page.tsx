@@ -1,5 +1,4 @@
-import EngBody from "@/components/engage/EngBody";
-import HeroEng from "@/components/engage/HeroEng";
+import CategoryBody from "@/components/category/CategoryBody";
 import Navbar from "@/components/Navbar";
 
 export default function Category() {
@@ -8,7 +7,7 @@ export default function Category() {
         <div className="sticky top-4 z-10">
           <Navbar />
         </div>
-      <EngBody />
+      <CategoryBody />
     </div>
   );
 }

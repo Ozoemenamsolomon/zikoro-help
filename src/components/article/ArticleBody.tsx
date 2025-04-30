@@ -1,44 +1,18 @@
 "use client";
-import { HelpMainTabIcon, HelpNoteCountIcon } from "@/constants/icons";
+import {
+  CategoryNote,
+  HelpMainTabIcon,
+  HelpNoteCountIcon,
+} from "@/constants/icons";
 import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "styled-icons/boxicons-regular";
+import { GreaterThan } from "styled-icons/fa-solid";
 
 export default function ArticleBody() {
-  const sections = [
-    {
-      tile: "Category 1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
-      totalNo: 6,
-    },
-
-    {
-      tile: "Category 2",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
-      totalNo: 36,
-    },
-
-    {
-      tile: "Category 3",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
-      totalNo: 46,
-    },
-
-    {
-      tile: "Category 4",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
-      totalNo: 66,
-    },
-
-    {
-      tile: "Category 5",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et ",
-      totalNo: 68,
-    },
-  ];
-
   const [tab, setTab] = useState<boolean>(true);
   const [subTab, setSubTab] = useState<boolean>(false);
+  const categories = ["title", "title", "title", "title", "title", "title"];
 
   return (
     <div className="bg-[#001FCC19]">
@@ -102,8 +76,64 @@ export default function ArticleBody() {
         </div>
 
         {/* right */}
-        <div className="border-l-[0px] lg:border-l-[1px] border-l-gray-300 w-full lg:w-[80%] px-3 lg:px-[32px] py-10 lg:py-[93px]">
-       
+        <div className="border-l-[0px] lg:border-l-[1px] border-l-gray-300 w-full lg:w-[80%] px-3 lg:px-[32px] pb-10  mt-[35px] lg:pb-[93px] relative">
+          {/* top */}
+          <div className="absolute flex items-center gap-x-1 ">
+            <p className="text-[#555555] font-semibold text-opacity-50 text-[14px]">
+              Help center <GreaterThan size={14} /> Category{" "}
+              <GreaterThan size={14} />
+            </p>
+            <p className="text-[#555555] font-semibold text-[14px] text-opacity-100">
+              {" "}
+              Title
+            </p>
+          </div>
+
+          {/* Mid */}
+          <p className="text-2xl font-semibold mt-12 text-[#31353B]">Title</p>
+
+          {/* Heading 1 */}
+          <div className="mt-8">
+            <p className="text-2xl font-semibold">Title</p>
+
+            <p className="text-[14px] mt-2 font-medium text-[#555555]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et.
+            </p>
+          </div>
+
+          <div className="mt-8">
+            <p className="text-2xl font-semibold">Title</p>
+
+            <p className="text-[14px] mt-2 font-medium text-[#555555]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et.
+            </p>
+          </div>
+
+          {/* bottom */}
+          <div className="mt-[32px]">
+            <p className="text-[#555555] font-semibold ">Popular topics</p>
+
+            <div className="mt-8 grid grid-cols-2 gap-x-[60px] gap-y-8 lg:gap-x-[120px] ">
+              {categories.map((category, index) => (
+                <div key={index} className="flex gap-x-2 items-center w-[50%]">
+                  <CategoryNote />
+                  <p className="text-[#31353B] capitalize font-semibold">{category}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
