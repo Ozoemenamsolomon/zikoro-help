@@ -1,7 +1,6 @@
 import HelpFooter from "@/components/HelpFooter";
 import "./globals.css";
 import { montserrat } from "@/constants/fonts";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 export default function RootLayout({
   children,

@@ -1,97 +1,106 @@
+"use client";
+
 import {
-  HelpEvents,
-  HelpCreds,
-  HelpBooks,
-  HelpEngs,
-  HelpArrowIcon,
+  ZikoroEvent,
+  ZikoroCred,
+  ZikoroBookings,
+  ZikoroEngage,
+  HelpBilling,
+  HelpSettings,
+  HelpFolder,
+  HelpNote,
 } from "@/constants/icons";
 import Link from "next/link";
 
 export default function HelpBody() {
-  const sections = [
+  const categories = [
     {
-      icon: <HelpEvents />,
-      tile: "Zikoro Events",
-      desc: "Plan, manage, and run unforgettable events.",
-      linkText: "Go to Events Help Center",
+      icon: <ZikoroEvent />,
+      title: "Zikoro Events",
+      desc: "Hosting and managing your events",
+      categoriesNo: 7,
+      articlesNo: 6,
       link: "/events",
-      PopTop1: "Popular topic 1",
-      PopTop2: "Popular topic 2",
-      PopTop3: "Popular topic 3",
     },
-
     {
-      icon: <HelpCreds />,
-      tile: "Zikoro Credentials",
-      desc: "Design, issue, and manage digital certificates and badges.",
-      linkText: "Go to Credentials Help Center",
-      link: "/credentials",
-      PopTop1: "Popular topic 1",
-      PopTop2: "Popular topic 2",
-      PopTop3: "Popular topic 3",
-    },
-
-    {
-      icon: <HelpBooks />,
-      tile: "Zikoro Bookings",
-      desc: "Streamline scheduling for you and your team.",
-      linkText: "Go to Bookings Help Center",
-      link: "/bookings",
-      PopTop1: "Popular topic 1",
-      PopTop2: "Popular topic 2",
-      PopTop3: "Popular topic 3",
-    },
-
-    {
-      icon: <HelpEngs />,
-      tile: "Zikoro Engagement",
-      desc: "Drive interaction and audience participation.",
-      linkText: "Go to Engagement Help Center",
+      icon: <ZikoroEngage />,
+      title: "Zikoro Engagements",
+      desc: "Hosting and managing your events",
+      categoriesNo: 7,
+      articlesNo: 6,
       link: "/engagements",
-      PopTop1: "Popular topic 1",
-      PopTop2: "Popular topic 2",
-      PopTop3: "Popular topic 3",
+    },
+    {
+      icon: <ZikoroCred />,
+      title: "Zikoro Credentials",
+      desc: "Hosting and managing your events",
+      categoriesNo: 7,
+      articlesNo: 6,
+      link: "/credentials",
+    },
+    {
+      icon: <ZikoroBookings />,
+      title: "Zikoro Bookings",
+      desc: "Hosting and managing your events",
+      categoriesNo: 7,
+      articlesNo: 6,
+      link: "/bookings",
+    },
+
+    {
+      icon: <HelpBilling />,
+      title: "Billing & Subscription",
+      categoriesNo: 7,
+      articlesNo: 6,
+      link: "/billings",
+    },
+
+    {
+      icon: <HelpSettings />,
+      title: "Accounts & Settings",
+      categoriesNo: 7,
+      articlesNo: 6,
+      link: "/settings",
     },
   ];
   return (
-    <div className="bg-[#001FCC19]">
-      <div className="flex items-center max-w-full lg:max-w-[980px] xl:max-w-[1300px] py-3 px-3 md:px-6 lg:px-[36px] justify-center mx-auto pt-[32px] pb-[61px]">
+    <div className="bg-white min-h-screen">
+      <div className="flex justify-center mx-auto text-center text-[#31353B]">
         <div>
-          <p className="text-center text-xl font-medium leading-[100%] text-[#31353B]">
-            Explore our suite of products and find answers, tutorials, and
-            support <br className="hidden lg:block" /> tailored to your needs.
-          </p>
-
-          <div className="mt-[52px] grid grid-cols-1 md:grid-cols-2 gap-8">
-            {sections.map((section, index) => (
-              <div key={index} className="bg-white rounded-[10px] py-[15px] px-5 w-full md:w-full">
-                <> {section.icon} </>
-                <p className="text-2xl font-semibold mt-6 text-[#31353B]">
-                  {section.tile}
-                </p>
-                <p className="mt-2 text-base text-[#555555] font-medium">
-                  {section.desc}
-                </p>
-
-                <Link href={section.link} className="flex gap-x-3 mt-6 items-center cursor-pointer ">
-                  <p className="text-indigo-700 text-base font-medium decoration-indigo-700 underline">
-                    {section.linkText}
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 mt-[52px] mb-[100px]">
+            {categories.map((category, index) => (
+              <div
+                key={index}
+                className=" rounded-[10px] w-full lg:w-[360px] flex justify-center py-[34px] border-[1px] border-[#EAEAEA]"
+              >
+                <Link href={category.link}>
+                  <div className="flex justify-center mx-auto">
+                    <>{category.icon}</>
+                  </div>
+                  <p className="text-center text-[20px] font-semibold mt-4">
+                    {category.title}
                   </p>
-                  <HelpArrowIcon />
-                </Link>
 
-                <ul className="font-[#31353B] list-disc text-base font-semibold mt-5 ]">
-                  Popular topics
-                </ul>
-                <li className="text-base underline font-medium mt-1 text-[#555555] cursor-pointer">
-                  {section.PopTop1}
-                </li>
-                <li className="text-base underline font-medium mt-1 text-[#555555] cursor-pointer">
-                  {section.PopTop2}
-                </li>
-                <li className="text-base  underline font-medium mt-1 text-[#555555] cursor-pointer">
-                  {section.PopTop3}
-                </li>
+                  <p className="text-center font-[#555555] text-base font-medium mt-2">
+                    {category?.desc}
+                  </p>
+                  <div className="flex justify-center gap-x-5 mt-[18px]">
+                    <div className="flex gap-x-1 items-center text-[12px] font-medium">
+                      <HelpFolder />
+                      <div className="flex gap-x-1">
+                        {category.categoriesNo}
+                        <p>Categories</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-x-1 items-center text-[12px] font-medium">
+                      <HelpNote />
+                      <div className="flex gap-x-1">
+                        {category.articlesNo}
+                        <p>Articles</p>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

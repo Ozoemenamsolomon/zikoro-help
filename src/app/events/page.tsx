@@ -1,15 +1,17 @@
-import EventBody from "@/components/events/EventBody";
-import HeroEvent from "@/components/events/HeroEvent";
+"use client";
+import HelpBody from "@/components/HelpBody";
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
 export default function Events() {
   return (
-    <div className="">
-        <div className="sticky top-4 z-10">
-          <Navbar/>
-        </div>
-      <HeroEvent />
-      <EventBody />
+    <div>
+      {" "}
+      <div className="sticky top-4 z-10">
+        <Navbar />
+      </div>
+      <Hero/>
+      {/* <HelpBody/> */}
     </div>
   );
 }
