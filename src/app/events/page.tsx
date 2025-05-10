@@ -1,4 +1,5 @@
 "use client";
+import EventsBody from "@/components/events/EventBody";
 import HelpBody from "@/components/HelpBody";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -11,7 +12,7 @@ export default function Events() {
         <Navbar />
       </div>
       <Hero/>
-      {/* <HelpBody/> */}
+      <EventsBody/>
     </div>
   );
 }
