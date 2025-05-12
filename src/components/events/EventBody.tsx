@@ -19,62 +19,54 @@ export default function EventsBody() {
     {
       icon: <EventsCreate />,
       title: "Creating an Event",
-      categoriesNo: 7,
       articlesNo: 6,
       link: "/events",
     },
     {
       icon: <EventsPromotion />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "Event Promotion and Registration",
       articlesNo: 6,
-      link: "/events",
+      link: "/promotions",
     },
     {
       icon: <EventsLive />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "Live Event Tools",
       articlesNo: 6,
-      link: "/events",
+      link: "/live",
     },
     {
       icon: <EventsAudience />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "Engaging Your Audience",
       articlesNo: 6,
-      link: "/events",
+      link: "/audience",
     },
 
     {
       icon: <EventsAnalytics />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "Post-Event Analytics",
       articlesNo: 6,
-      link: "/events",
+      link: "/analytics",
     },
 
     {
       icon: <EventsTickets />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "Ticketing and Payments",
       articlesNo: 6,
-      link: "/events",
+      link: "/tickets",
     },
 
     {
       icon: <EventsTrouble />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "Event Troubleshooting",
       articlesNo: 6,
-      link: "/events",
+      link: "/troubleshooting",
     },
 
     {
       icon: <EventsFaq />,
-      title: "Creating an Event",
-      categoriesNo: 7,
+      title: "FAQs",
       articlesNo: 6,
-      link: "/events",
+      link: "/faq",
     },
   ];
   return (

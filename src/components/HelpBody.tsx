@@ -66,12 +66,12 @@ export default function HelpBody() {
   return (
     <div className="bg-white min-h-screen">
       <div className="flex justify-center mx-auto text-center text-[#31353B]">
-        <div>
+        <div className="w-full lg:w-fit px-3 lg:px-0">
           <div className="grid grid-cols-1  lg:grid-cols-2 gap-6 mt-[52px] mb-[100px]">
             {categories.map((category, index) => (
               <div
                 key={index}
-                className=" rounded-[10px] w-full lg:w-[360px] flex justify-center py-[34px] border-[1px] border-[#EAEAEA]"
+                className=" rounded-[10px] max-w-full w-full lg:w-[360px] flex justify-center py-[34px] border-[1px] border-[#EAEAEA]"
               >
                 <Link href={category.link}>
                   <div className="flex justify-center mx-auto">
