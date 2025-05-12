@@ -20,53 +20,53 @@ export default function EventsBody() {
       icon: <EventsCreate />,
       title: "Creating an Event",
       articlesNo: 6,
-      link: "/create",
+      link: "/events/create",
     },
     {
       icon: <EventsPromotion />,
       title: "Event Promotion and Registration",
       articlesNo: 6,
-      link: "/promotions",
+      link: "/events/promotions",
     },
     {
       icon: <EventsLive />,
       title: "Live Event Tools",
       articlesNo: 6,
-      link: "/live",
+      link: "/events/live",
     },
     {
       icon: <EventsAudience />,
       title: "Engaging Your Audience",
       articlesNo: 6,
-      link: "/audience",
+      link: "/events/audience",
     },
 
     {
       icon: <EventsAnalytics />,
       title: "Post-Event Analytics",
       articlesNo: 6,
-      link: "/analytics",
+      link: "/events/analytics",
     },
 
     {
       icon: <EventsTickets />,
       title: "Ticketing and Payments",
       articlesNo: 6,
-      link: "/tickets",
+      link: "/events/tickets",
     },
 
     {
       icon: <EventsTrouble />,
       title: "Event Troubleshooting",
       articlesNo: 6,
-      link: "/troubleshooting",
+      link: "/events/troubleshooting",
     },
 
     {
       icon: <EventsFaq />,
       title: "FAQs",
       articlesNo: 6,
-      link: "/faq",
+      link: "/events/faq",
     },
   ];
   return (
@@ -100,7 +100,7 @@ export default function EventsBody() {
                   <div className="flex justify-center mx-auto">
                     <>{category.icon}</>
                   </div>
-                  <p className="text-center text-[20px] px-1 font-semibold mt-4">
+                  <p className="text-center text-[20px] px-[2px] font-semibold mt-4">
                     {category.title}
                   </p>
 
