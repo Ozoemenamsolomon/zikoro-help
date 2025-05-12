@@ -20,7 +20,7 @@ export default function EventsBody() {
       icon: <EventsCreate />,
       title: "Creating an Event",
       articlesNo: 6,
-      link: "/events",
+      link: "/create",
     },
     {
       icon: <EventsPromotion />,
@@ -77,7 +77,7 @@ export default function EventsBody() {
           <div>
             <Link
               href="/"
-              className="flex items-center text-[14px] text-[#555555] gap-x-1"
+              className="flex items-center text-[14px] text-[#555555] gap-x-1 cursor-pointer"
             >
               Home <HelpRightArrow />{" "}
             </Link>
@@ -100,7 +100,7 @@ export default function EventsBody() {
                   <div className="flex justify-center mx-auto">
                     <>{category.icon}</>
                   </div>
-                  <p className="text-center text-[20px] font-semibold mt-4">
+                  <p className="text-center text-[20px] px-1 font-semibold mt-4">
                     {category.title}
                   </p>
 
