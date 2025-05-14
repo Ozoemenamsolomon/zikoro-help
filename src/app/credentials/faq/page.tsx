@@ -1,7 +1,5 @@
 "use client";
-import EventsBody from "@/components/events/EventBody";
-import EventsAnalytics from "@/components/events/EventsAnalytics";
-import HelpBody from "@/components/HelpBody";
+import CredFaq from "@/components/cred/CredFaq";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -13,7 +11,7 @@ export default function page() {
         <Navbar />
       </div>
       <Hero/>
-      <EventsAnalytics/>
+      <CredFaq/>
     </div>
   );
 }
