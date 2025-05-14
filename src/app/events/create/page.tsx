@@ -1,5 +1,5 @@
 "use client";
-import EventCreate from "@/components/events/EventCreate";
+import EventsCreate from "@/components/events/EventCreate";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -11,7 +11,7 @@ export default function page() {
         <Navbar />
       </div>
       <Hero />
-      <EventCreate />
+      <EventsCreate/>
     </div>
   );
 }

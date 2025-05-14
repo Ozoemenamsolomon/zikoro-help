@@ -1,5 +1,5 @@
 "use client";
-import EventsAudience from "@/components/events/EventsEngage";
+import EventsTroublshoot from "@/components/events/EventsTroubleshooting";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -11,7 +11,7 @@ export default function page() {
         <Navbar />
       </div>
       <Hero />
-      <EventsAudience/>
+      <EventsTroublshoot/>
     </div>
   );
 }

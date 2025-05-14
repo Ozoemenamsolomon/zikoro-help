@@ -3,7 +3,7 @@ import Article from "@/components/article/Article";
 import { HelpNote, HelpRightArrow } from "@/constants/icons";
 import Link from "next/link";
 
-export default function EventsCreate() {
+export default function EventsAnalytics() {
   const infos = [
     {
       title: "Title",
@@ -47,7 +47,7 @@ export default function EventsCreate() {
               </Link>
             </div>
             <p className="font-semibold text-[#31353B] text-lg gap-x-1">
-              Creating an Event{" "}
+              Analysing an Event{" "}
             </p>
           </div>
           {/* bottom */}
