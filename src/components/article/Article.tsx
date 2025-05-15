@@ -10,7 +10,7 @@ type PropParameter = {
 };
 
 const readArticle = () => {
-  window.open('/article', '_blank')
+  window.open('/article/1', '_blank')
 }
 export default function Article({ title, desc, date }: PropParameter) {
   const router = useRouter()
