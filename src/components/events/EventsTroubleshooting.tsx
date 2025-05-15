@@ -53,9 +53,9 @@ export default function EventsTroublshoot() {
           {/* bottom */}
           <div className="grid grid-cols-1 gap-3 mt-8">
             {infos.map((data) => (
-              <Link href="/events">
+              <div>
                 <Article title={data.title} desc={data.desc} date={data.date} />
-              </Link>
+              </div>
             ))}
           </div>
         </div>

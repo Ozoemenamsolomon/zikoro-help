@@ -1,14 +1,21 @@
 "use client";
 import { HelpNote } from "@/constants/icons";
+import { useRouter } from "next/navigation";
 
 type PropParameter = {
   title: string;
   desc: string;
   date: number;
+  
 };
+
+const readArticle = () => {
+  window.open('/article', '_blank')
+}
 export default function Article({ title, desc, date }: PropParameter) {
+  const router = useRouter()
   return (
-    <div className="bg-[#F7F8FF] p-3 w-full lg:w-[754px] rounded-lg  border-[1px] border-[#EAEAEA]">
+    <div onClick={readArticle} className="bg-[#F7F8FF] p-3 w-full lg:w-[754px] rounded-lg  border-[1px] border-[#EAEAEA] cursor-pointer">
       <div className="flex gap-x-2">
         <div className="mt-1">
           <HelpNote />

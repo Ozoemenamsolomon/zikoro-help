@@ -3,7 +3,7 @@ import Article from "@/components/article/Article";
 import { HelpNote, HelpRightArrow } from "@/constants/icons";
 import Link from "next/link";
 
-export default function EventsCreate() {
+export default function EngCustomize() {
   const infos = [
     {
       title: "Title",
@@ -39,15 +39,15 @@ export default function EventsCreate() {
               </Link>
 
               <Link
-                href="/events"
+                href="/engagements"
                 className="cursor-pointer flex items-center gap-x-1"
               >
                 {" "}
-                Zikoro Events <HelpRightArrow />{" "}
+                Zikoro Engagements <HelpRightArrow />{" "}
               </Link>
             </div>
             <p className="font-semibold text-[#31353B] text-lg gap-x-1">
-              Creating an Event{" "}
+              Custimizing In Engagements{" "}
             </p>
           </div>
           {/* bottom */}
